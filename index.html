@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FlySolutions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom, white, #e0ecff);
+      color: #1f2937;
+    }
+    header {
+      text-align: center;
+      padding: 60px 20px;
+    }
+    header img {
+      width: 220px;
+      margin-bottom: 10px;
+      margin-right: 15px;
+    }
+    h1 {
+      font-size: 3rem;
+      font-weight: 800;
+    }
+    header p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 20px auto;
+    }
+    .btn-primary {
+      margin-top: 30px;
+      padding: 12px 24px;
+      background: #2563eb;
+      color: white;
+      border: none;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 6px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      padding: 60px 20px;
+      margin: auto;
+    }
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+      transition: transform 0.2s;
+      text-align: center;
+    }
+    .card:hover {
+      transform: scale(1.03);
+    }
+    .card h3 {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: 1.4rem;
+    }
+    .card p {
+      font-size: 0.95rem;
+    }
+    .card-icon {
+      width: 40px;
+      height: 40px;
+      margin: 0 auto;
+    }
+    .why-section {
+      text-align: center;
+      padding: 80px 20px;
+      background: white;
+    }
+    .why-section h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    .why-section ul {
+      max-width: 600px;
+      margin: 30px auto;
+      text-align: left;
+      list-style: none;
+    }
+    .why-section li {
+      margin-bottom: 12px;
+      padding-left: 24px;
+      position: relative;
+    }
+    .why-section li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: #16a34a;
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 0.85rem;
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo sin fondo tendencias.PNG" alt="FlySolutions Logo" />
+    <h1>FlySolutions</h1>
+    <p>Soluciones empresariales inteligentes basadas en la nube. Modernizá tu negocio con tecnología, seguridad y escalabilidad.</p>
+    <button class="btn-primary">Solicitar una demo</button>
+  </header>
+
+  <section class="grid">
+    <div class="card">
+      <div class="card-icon" data-lucide="cloud"></div>
+      <h3>Infraestructura Cloud</h3>
+      <p>Migramos tu infraestructura local a la nube, reduciendo costos y asegurando operación ininterrumpida. Servicios IaaS, PaaS y almacenamiento seguro.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon" data-lucide="database-zap"></div>
+      <h3>Analítica & IA</h3>
+      <p>Transformamos datos en decisiones con inteligencia artificial, dashboards y modelos predictivos personalizados.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon" data-lucide="shield-check"></div>
+      <h3>Seguridad & Soporte</h3>
+      <p>Ciberseguridad empresarial y soporte técnico 24/7 para garantizar continuidad y protección de tus sistemas.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon" data-lucide="zap"></div>
+      <h3>Automatización con RPA</h3>
+      <p>Automatizamos procesos repetitivos como reportes y carga de datos para mejorar eficiencia operativa.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon" data-lucide="bar-chart"></div>
+      <h3>Business Intelligence</h3>
+      <p>Visualización de indicadores clave (KPIs), reportes automatizados y control de gestión inteligente.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon" data-lucide="help-circle"></div>
+      <h3>Asesoría Personalizada</h3>
+      <p>Acompañamos tu transformación digital desde la estrategia hasta la implementación.</p>
+    </div>
+  </section>
+
+  <section class="why-section">
+    <h2>¿Por qué elegir FlySolutions?</h2>
+    <ul>
+      <li>Ahorro comprobado de hasta 30% en infraestructura IT</li>
+      <li>Analítica predictiva y decisiones basadas en datos</li>
+      <li>Soporte técnico en español 24/7</li>
+      <li>Soluciones personalizadas según sector</li>
+    </ul>
+    <button class="btn-primary">Solicitá tu demo gratuita</button>
+  </section>
+
+  <footer>
+    © 2025 FlySolutions. Todos los derechos reservados.
+  </footer>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
